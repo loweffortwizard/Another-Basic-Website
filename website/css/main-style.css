@@ -1,0 +1,129 @@
+*{
+	/* sets universal properties for all elements in the html file */
+	margin:0;
+	border:0;
+	padding:0;
+}
+body{
+	background: #f2f2f2; /* sets background color */
+	font: 14px/20px Arial; /* sets font sizes for body elemnents. 14=font size 20= spacing */
+	color: #000; /*8 sets font color */
+	margin: 5px; /* sets margin */
+}
+h1{
+	text-align: center; /* sets text position */
+	padding: 5% 0px; /* sets padding for top, botton and left, right */
+}
+h3{
+	padding: 5% 0px; /* sets padding for top, bottom and left, right */
+}
+p{
+	padding: 1%; /* sets padding (padding will be 1% of the element it is contaned in) */
+}
+img{
+	text-align: center; /* sets alignment of elemment */
+	max-width: 100%; /* sets max width (100% menaing that element will be 100% of the size in the container) */
+	height: auto; /* sets height (auto means horizontally center that element within its container ) */
+	width: auto; /* sets width (auto means horizontally center that element within its container) */
+}
+a{
+	color: #FFFFFF; /* sets color */
+	text-decoration: none; /* sets decoration for text */
+	font-weight: bold; /* sets font weight */
+}
+.contacts{
+	color: #000; /* sets color */
+	text-decoration: none; /* sets decoration for text */
+	font-weight: bold; /* sets font weight */
+}
+.contacts:hover{
+	color: #FFFFFF; /* sets color for hover*/
+	background-color: #000;
+	text-decoration: underline; /* sets decoration for text */
+}
+nav a:hover{
+	color: #FFFFFF; /* sets color for hover*/
+	background-color: #000;
+	text-decoration: underline; /* sets decoration for text */
+}
+header{
+	background: #666666; /* sets background color */
+	width: 100%; /* sets width */
+	height: 86px; /* sets height */
+	
+	position: fixed; /* sets position */
+	top: 0; /* sets position */
+	left: 0; /* sets position */
+	
+	z-index: 100; /* Sets the stack order of a positioned element */
+	opacity: 0.95; /* sets the opacity of the element */
+}
+#logo{
+	padding: 20px;
+	width: 100px;
+	height: auto;
+}
+nav{
+	/* nav is the text for the links of the page */
+	float: right; /* sets float position for nav */
+	padding: 20px 20px; /* sets padding for nav */
+}
+ul{
+	list-style: none; /* no list styles */
+}
+nav ul li{ 
+	/* text for nav */
+	display: block; /* sets display */
+	float: left; /* sets float position */
+	padding: 10px; /* sets padding */
+	text-shadow: 2px 2px #000000;
+}
+#content{
+/* images for image slider */
+	margin: 0 auto; /* sets margin for content */
+	max-width: 1140px; /* sets max width for content */
+	margin-top: 100px; /* sets margin top for content */
+}
+.blueberry{
+/* properties for jquery */
+	max-width: 960px; 
+	margin-top: 100px;
+}
+.slides{
+/* properties for jquery */
+	margin:0;
+	border:0;
+}
+section{
+/* section properties */
+	width: 29%; /* width of sections */
+	float: left; /* sets float left for section */
+	margin: 2% 2%; /* sets margin */
+	text-align: center; /* sets text position */
+}
+.clear{
+	clear: both; /* Specifies which sides of an element where other floating elements are not allowed */
+}
+footer{
+/* footer for the media links, contact and image */
+	background: #999999; /* sets background */
+	width: 100%; /* sets width */
+	overflow: hidden; /* sets overflow (The overflow property specifies what happens if content overflows an element's box.) */
+}
+footer.copyright-text{
+	background-color: #666666; /* sets background-color */
+	max-height: 50px; /* sets max-height */
+	text-align: center; /* sets text position */
+	opacity: 0.95; /* sets opacity */
+}
+button{
+	/* css for input methods for button and reset */
+	padding: 5px;/* padding right for buttons */
+	border: 2px solid #000; /* border for buttons */
+	width: auto; /* width for buttons */
+	height: auto; /* height for buttons */
+}
+/* situational css for certain needs */
+.blank-space{
+	height: 100px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.clockStyle {
+	/* css properties for elements colours */
+		background-color:#000;
+		color:#fff;
+		text-shadow: 5px 0 5px #FE00F5;
+	
+	/* css properties for elements box model */
+		padding: 2%;
+		border: 10px #FE00F5 solid;
+		text-shadow: 5px 0 5px #FE00F5;
+	
+	/* css properties for text content */
+		font-family: sans-serif;
+		font-size: 600%;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 10px;
+		
+		 width: 960px;
+		margin: 0 auto;
+		overflow: hidden;
+}
+</style>
+</head>
+<body>
+<div id="clockDisplay" class="clockStyle"></div>
+<script>
+	//this method will get the times for the hours, minutes and seconds.
+	//then determain what those times are.
+	//finally display those times in the element with the ID of clockDisplay.
+
+		function renderTime() {
+			var currentTime = new Date();
+			//var currrentTime = new Date
+			var setTime = "AM";
+			//var diem = AM text content
+			var h = currentTime.getHours();
+			//var h has the value of the current times hour
+			var m = currentTime.getMinutes();
+			//var h has the value of the current times minutes
+			var s = currentTime.getSeconds();
+			//var h has the value of the current times seconds
+			setTimeout('renderTime()',1000);
+			//The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds
+			//method renderTime will run every 1000 millisecond
+			
+				if (h == 0) {
+				//if hours == 0
+					h = 12;
+					//var h has the value of 12
+				} else if (h > 12) { 
+				//else if hours > 12
+					h = h - 12;
+					//var h has the value of itself - 12
+					setTime = "PM";
+					//var setTime will now have the value of PM
+				}
+				else{
+					setTime = "AM";
+					//var setTime has the value of AM
+				}
+				
+					if (h < 10) {
+					//if h < 10
+						h = "0" + h;
+						//var h = "0" plus h
+					}
+					if (m < 10) {
+					//if var m is < 10 
+						m = "0" + m;
+						//var m = "0" plus m
+					}
+					if (s < 10) {
+					//if var s is < 10 
+						s = "0" + s;
+						//var s = "0" plus s
+					}
+			
+			var myClock = document.getElementById('clockDisplay');
+			//var myClock has the value of element with ID of clockDisplay
+			myClock.textContent = h + ":" + m + ":" + s + " " + setTime;
+			//var myClock text content will have the values of var h + var m + var s + var setTime
+			
+			//ref: https://www.developphp.com/video/JavaScript/Digital-Clock-Tutorial-Custom-Animated-Clock 
+		}
+		window.onLoad = renderTime();
+		//when the webpage loads, run the function called renderTime 
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+*{
+	/* sets universal properties for all elements in the html file */
+	margin:0;
+	border:0;
+	padding:0;
+}
+body{
+	background: #f2f2f2; /* sets background color */
+	font: 14px/20px Arial; /* sets font sizes for body elemnents */
+	color: #000; /*8 sets color */
+	margin: 5px; /* sets margin */
+}
+header{
+	background: #666666; /* sets background color */
+	width: 100%; /* sets width */
+	height: 86px; /* sets height */
+	position: fixed; /* sets position */
+	top: 0; /* sets position */
+	left: 0; /* sets position */
+	z-index: 100; /* Sets the stack order of a positioned element */
+	opacity: 0.90; /* sets the opacity of the element */
+}
+#logo{
+	padding: 20px;
+	width: 100px;
+	height: auto;
+}
+nav{
+	/* nav is the text for the links of the page */
+	float: right; /* sets float position for nav */
+	padding: 20px 20px; /* sets padding for nav */
+}
+ul{
+	list-style: none; /* no list styles */
+}
+nav ul li{ 
+	/* text for nav */
+	display: block; /* sets display */
+	float: left; /* sets float position */
+	padding: 10px; /* sets padding */
+	text-shadow: 2px 2px #000000;
+}
+section{
+/* section properties */
+	width: 29%; /* width of sections */
+	float: left; /* sets float left for section */
+	margin: 2% 2%; /* sets margin */
+	text-align: center; /* sets text position */
+}
+footer{
+/* footer for the media links, contact and image */
+	background: #999999; /* sets background */
+	width: 100%; /* sets width */
+	overflow: hidden; /* sets overflow (The overflow property specifies what happens if content overflows an element's box.) */
+	opacity: 0.90; /* sets opacity */ 
+}
+footer.copyright-text{
+	background-color: #666666; /* sets background-color */
+	max-height: 50px; /* sets max-height */
+	text-align: center; /* sets text position */
+	opacity: 0.95; /* sets opacity */
+}
+a{
+	color: #FFFFFF; /* sets color */
+	text-decoration: none; /* sets decoration for text */
+	font-weight: bold; /* sets font weight */
+}
+.contacts{
+	color: #000; /* sets color */
+	text-decoration: none; /* sets decoration for text */
+	font-weight: bold; /* sets font weight */
+}
+.contacts:hover{
+	color: #FFFFFF; /* sets color for hover*/
+	background-color: #000;
+	text-decoration: underline; /* sets decoration for text */
+}
+a:hover{
+	color: #FFFFFF; /* sets color for hover*/
+	background-color: #000;
+	text-decoration: underline; /* sets decoration for text */
+}
+.blank-space{
+	height: 85px;
+}
+h3{
+	line-height: 110%; /* sets line height (The line-height property defines the amount of space above and below inline elements. ) */
+	padding: 5% 0; /* sets padding for top, bottom and left, right */
+}
+p{
+	padding: 1%; /* sets padding (padding will be 1% of the element it is contaned in) */
+}	
+/* CSS FOR INPUT methods in html doc for the order form */	
+input[type=text], [type=number] {
+	/* css for input methods for numbers and text */
+	text-align: center;/* centring text */
+	color: #000;/* color of text */
+	padding: 5px; /* padding for text */
+	border: 2px solid #000; /* border for text */
+}
+input[type=button], [type=reset]{
+	/* css for input methods for button and reset */
+	padding-right: 5px;/* padding right for buttons */
+	border: 2px solid #000; /* border for buttons */
+	width: 80px; /* width for buttons */
+	height: 30px; /* height for buttons */
+}
+button{
+	/* css for input methods for button and reset */
+	padding: 5px;/* padding right for buttons */
+	border: 2px solid #000; /* border for buttons */
+	width: auto; /* width for buttons */
+	height: auto; /* height for buttons */
+}
+input[type=text]{
+	/* css for input methods for text */
+	text-align: left; /* text alignment for text */
+	padding: 5px; /* padding for button */
+	color: #000; /* colour of button */
+}
+	
+td.right {
+	/* css for class right (which is the total text by the single td) */
+	text-align: right;/* text alignment for class */
+	font-weight: bold; /* font weight for class */
+	color: #000; /* colour for class */
+}
+form{
+	/* css for the form in the order form html doc */
+	padding: 20px; /* padding for form */
+	width: 960px; /* width for form */
+	height: auto; /* height for form */
+	color: #000; /* colour for form */
+}
+.orderp{
+	/* css for class orderp (which is the text next to the full name and address text boxes) */
+	padding-bottom: 10px; /* padding bottom for class */
+	color: #000; /* colour for class */
+}

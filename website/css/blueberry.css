@@ -1,0 +1,40 @@
+/* sets properties for class image-slider*/
+.blueberry { margin: 0 auto;}
+/* sets properties for class image-slider slides*/
+.blueberry .slides {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+/* sets properties for class image-slider slide list items*/
+.blueberry .slides li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+/* sets properties for class image-slider slide list item images*/
+.blueberry .slides li img {
+	display: block;
+	width: 100%;
+	max-width: none;
+}
+/* sets properties for image-slider paper or the dots under the image slider*/
+.blueberry .pager {
+	height: 40px;
+	text-align: center;
+}
+/* sets properties for image-slider paper or the dots under the image slider so papers are horizontal not vertical */
+.blueberry .pager li { 
+	display: inline-block; 
+}
+/* sets properties for image-slider paper list item links to add padding */
+.blueberry .pager li a {
+	padding: 18px 8px;
+}
+/* sets properties for image-slider paper list item links span to have a background-color */
+.blueberry .pager li a span {
+	background: #c0c0c0;
+}
+/* sets properties for image-slider paper list item links span to have a different background-color when active */
+.blueberry .pager li.active a span { background: #404040; }

@@ -1,0 +1,35 @@
+body{
+	background-color: grey;
+	color: fff;
+	width: 960px;
+	height: auto;
+	text-align: center;
+	border: 5px solid #000;
+}
+#container{
+	background-color: #fff;
+	color: #000;
+	margin: 2px 2px;
+	padding: 2px 2px;
+}
+p{
+	background-color: #fff;
+	color: #000;
+	margin: 2px 2px;
+	padding: 2px 2px;
+}
+form{
+	background-color: #fff;
+	color: #000;
+	margin: 2px 2px;
+	padding: 2px 2px;
+}
+label{
+	padding-left: 3%;
+}
+h1{
+	padding-left: 3%;
+}
+#submission{
+	margin-left: 3%;
+}

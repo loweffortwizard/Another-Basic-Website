@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website</title>
+<meta name="viewpoint" content="width=divice-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/blueberry.css" /> <!--css file local -->
+<link rel="stylesheet" href="css/main-style.css" /> <!--css file local -->
+	<!-- note that the # means there is no link -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> <!--JavaScript file local -->
+<script src="javascript/jquery.blueberry.js"></script> <!--JavaScript file local -->
+<script> <!--JavaScript initialising -->
+$(window).load(function(){
+	$('.blueberry').blueberry();
+});
+</script> <!--JavaScript initials ending -->
+</head> <!-- end of head -->
+
+<body> <!-- start of body -->
+<div> <!-- start of main div -->
+
+	<!-- start of navigation -->
+	<header><img id="logo" src="images/logo.png"/><a href="index.html"></a>
+			<nav>
+				<ul><!-- Navigation links -->
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Our Products</a></li>
+					<li><a href="partners.html">Our Partners</a></li>
+					<li><a href="order-form.html">Order</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- End of Navigation -->
+		
+		<!-- Start of image slider -->
+		<div id="img-container">
+			<div id="content">
+				<div class="blueberry"> <!-- image-slider is the name of the slider with JavaScript-->
+				<ul class="slides"> <!-- used for blueberry slider with css -->
+					<li><a href="https://www.google.co.uk/"/><img src="images/about-us-1.jpg"/></li></a>
+					<li><a href="https://www.google.co.uk/"/><img src="images/about-us-2.jpg"/></li></a>
+					<li><a href="https://www.google.co.uk/"/><img src="images/about-us-3.jpg"/></li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end of image slider -->
+	
+	<!-- start of main section -->
+	<section> <!-- tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. -->
+		<h1>Header</h1>
+		<p>First and foremost an About Us page has to get a point across. Everything else is completely useless unless the content and the layout is achieving a goal.  </p>
+	</section>
+	
+	<section>
+		<h1>Header</h1>
+		<p>That goal is to tell the user who you are by showing them what you can do for them or have done for others. </p>
+	</section>
+	
+	<section>
+		<h1>Header</h1>
+		<p>Some About Us pages spend the whole time talking about what it is that the company does and nothing about the staff members. Some do the opposite. Unless the page gives the information that you need based on the type of site you are on then it will not make the list. </p>
+	</section>
+	<!-- end of main section -->
+	
+	<!-- start of class -->
+	<div class="clear"></div>
+	<h1> Random Header For Reasons </h1>
+	<div class="clear"></div>
+	<!-- end of class -->
+	
+	<!-- start of sub section -->
+	<section> <!-- tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. -->
+		<h1>Header</h1>
+		<p>A good About Us page always needs to have some mention of past successes, achievements, social proof, etc. Giving concrete examples of why your site or blog is worth reading is extremely important for these pages. </p>
+	</section>
+
+	<section>
+		<h1>Header</h1>
+		<p>Some of the About Us pages I am about to show you will make you weep because they are so beautiful. Some not so much. But it is important to note that I have not included any pages on here purely because they look nice. </p>
+	</section>
+	
+	<section>
+		<h1>Header</h1>
+		<p>The reason for this is that some About Us pages look amazing but have terrible content whilst others look terrible but grab your attention immediately. </p>
+	</section>
+	<!-- end of sub section -->
+	
+	<footer> <!-- start of footer -->
+		<section> <!-- start of 1st section in footer -->
+			<a href="contact.html"><h3 class="contacts"><b>The Place</b></h3></a>
+			<p><b>01872 267 879</b><br>
+			Random Place Street<br>
+			Random Area In The World<br>
+			random@random.e-mail.co.uk<br>
+			</p>	
+		</section> <!-- end of 1st section in footer -->
+		
+		<section> <!-- start of 2nd section in footer -->
+			<a href="contact.html"><h3 class="contacts"><b>The Contacts</b></h3></a>
+			<p><b>Tele: 01872 267 879</b><br>
+			Twitter: @somecarthing<br>
+			Facebook: somecarthing<br>
+			E-mail: random@random.e-mail.co.uk<br>
+			</p>
+		</section> <!-- end of 2nd section in footer -->
+		
+		<section> <!-- start of 3rd section in footer -->
+			<h3> Why are we so cool? </h3>
+			<button type="button" onclick="alertUser()">Click me to find out</button>
+			<!-- onclick is the event handler -->
+			
+		<script> <!-- function is a user defined event that can be given an action -->
+			function alertUser(){ 
+			 //function has the value of alertUser, meaning alertUser will be the variable referenced
+				alert("We are not.");
+				//alert is the event action that will display the text in the () in a small window/box
+			}
+		</script>
+		</section> <!-- end of 3rd section in footer -->
+	</footer> <!-- end of footer -->
+	
+	<!-- Start of copyright footer -->
+	<footer class="copyright-text">
+		<p> &#169; Copyright - CopyrightOther, AC/DC/BC, 1678. </p>
+	<footer>
+	<!-- End of copyright footer -->
+</div> <!-- end of main div -->
+</body> <!-- end of body -->
+</html> <!-- end of html -->

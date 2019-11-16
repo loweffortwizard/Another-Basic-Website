@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website</title>
+<meta name="viewpoint" content="width=divice-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/blueberry.css" /> <!--css file local -->
+<link rel="stylesheet" href="css/main-style.css" /> <!--css file local -->
+	<!-- note that the # means there is no link -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> <!--JavaScript file local -->
+<script src="javascript/jquery.blueberry.js"></script> <!--JavaScript file local -->
+<script> <!--JavaScript initialising -->
+$(window).load(function(){
+	$('.blueberry').blueberry();
+});
+</script> <!--JavaScript initials ending -->
+</head> <!-- end of head -->
+
+<body> <!-- start of body -->
+<div> <!-- start of main div -->
+
+	<!-- start of navigation -->
+	<header><img id="logo" src="images/logo.png"/><a href="index.html"></a>
+			<nav>
+				<ul><!-- Navigation links -->
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Our Products</a></li>
+					<li><a href="partners.html">Our Partners</a></li>
+					<li><a href="order-form.html">Order</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- End of Navigation -->
+		
+		<!-- Start of image slider -->
+		<div id="img-container">
+			<div id="content">
+				<div class="blueberry"> <!-- image-slider is the name of the slider with JavaScript-->
+				<ul class="slides"> <!-- used for blueberry slider with css -->
+					<!-- image links -->
+					<li><a href="https://www.google.co.uk/"/><img src="images/contact-us-1.jpg"/></li></a>
+					<li><a href="https://www.google.co.uk/"/><img src="images/contact-us-2.jpg"/></li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end of image slider -->
+	
+	<!-- start of main content -->
+	<div class="clear"></div>
+	<h1> Random Header For Reasons </h1>
+	<div class="clear"></div>
+	
+	<div class="clear"></div>
+	<h4> Random Header To The Side For Reasons </h4>
+	<div class="clear"></div>
+	
+	<!-- start of content -->
+	<div class="clear"></div>
+	<p>The purpose of any website is to get people from your target audience 
+	interested in what you are offering. Whether it be a product or service, 
+	9 times out of 10, someone is going to want to communicate with you further.
+	Because of this, in almost any industry, you are going to want to create a contact page.</p>
+	<!-- end of content -->
+	
+	<div class="clear"></div>
+	<h1> Random Header For Reasons </h1>
+	<div class="clear"></div>
+	<!-- end of main content -->
+	
+	<!-- start of contact form -->
+	<form id="contact-form" name="Contact-Form" action="mailto:tr143938@ghs.truropenwith.ac.uk" method="post">
+	<!-- ID for contact form -->
+	
+		<!-- start of name input -->
+		<p>
+		  <label>Name:<br />
+			<input name="Name" type="text" id="fName" size="30" />
+		  </label>
+		</p>
+		<!-- end of name input -->
+		<!-- start of message input -->
+		<p>
+		  <label>Message:<br />
+			<textarea name="Message" id="message" cols="93" rows="10"></textarea>
+		  </label>
+		</p>
+		<!-- end of message input -->
+		<!-- start of button input -->
+		<p>
+		  <label>
+			<input name="Button" type="submit" id="button" value="Send" />
+		  </label>
+		</p>
+		<!-- end of button input -->
+	</form>
+	<!-- end of contact form -->
+  
+	<div class="clear"></div>
+	
+	<!-- start of contact content -->
+	<!-- start of phone content -->
+	<section> <!-- tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. -->
+		<a href="https://www.google.co.uk/"/><img src="images/call-1.jpg"/></a>
+		<h1>Random-Phone-Numbers</h1>
+		<p><b>Tele: 01872 267 879</b><br>
+		Open All Hours!!<br> 
+		Most Of The Time<br>
+		"We May Be Ready To Take Your Call... Maybe..."<br>
+		--Jim From Accounting.</p>
+	</section>
+	<!-- end of phone content -->
+	
+	<!-- start of social media content -->
+	<section>
+		<a href="https://www.google.co.uk/"/><img src="images/social-media-1.png"/></a>
+		<h1>Random-Social-Media</h1>
+		<p><b>Talk 2 Us 4 Some Re4son On The SM.</b><br>
+			Twitter: @somecarthing<br>
+			Facebook: somecarthing<br>
+			Instargrammy: somecarthing<br>
+			Tumble: somecarthing<br>
+			Yahoo!!: somecarthing<br>
+			Redit?: somecarthing<br>
+			E-mail: random@random.e-mail.co.uk<br>
+			</p>
+	</section>
+	<!-- end of social media content -->
+	
+	<!-- start of location content -->
+	<section>
+		<a href="https://www.google.co.uk/"/><img src="images/location-1.png"/></a>
+		<h1>Random-Location-And-Places</h1>
+		<p><b>01872 267 879</b><br>
+		Random Place Street<br>
+		Random Country<br>
+		Random Continent<br>
+		Random Area In The World<br>
+		Random Solar System<br>
+		Random Galaxy<br>
+		random@random.e-mail.co.uk<br>
+		</p>
+	</section>
+	<!-- end of location content -->
+	<!-- end of contact content -->
+	
+	<footer> <!-- start of footer -->
+		<section> <!-- start of 1st section in footer -->
+			<a href="contact.html"><h3 class="contacts"><b>The Place</b></h3></a>
+			<p><b>01872 267 879</b><br>
+			Random Place Street<br>
+			Random Area In The World<br>
+			random@random.e-mail.co.uk<br>
+			</p>	
+		</section> <!-- end of 1st section in footer -->
+		
+		<section> <!-- start of 2nd section in footer -->
+			<a href="contact.html"><h3 class="contacts"><b>The Contacts</b></h3></a>
+			<p><b>Tele: 01872 267 879</b><br>
+			Twitter: @somecarthing<br>
+			Facebook: somecarthing<br>
+			E-mail: random@random.e-mail.co.uk<br>
+			</p>
+		</section> <!-- end of 2nd section in footer -->
+		
+		<section> <!-- start of 3rd section in footer -->
+			<h3> Why are we so cool? </h3>
+			<button type="button" onclick="alertUser()">Click me to find out</button>
+			<!-- onclick is the event handler -->
+			
+		<script> <!-- function is a user defined event that can be given an action -->
+			function alertUser(){ 
+			 //function has the value of alertUser, meaning alertUser will be the variable referenced
+				alert("We are not.");
+				//alert is the event action that will display the text in the () in a small window/box
+			}
+		</script>
+		</section> <!-- end of 3rd section in footer -->
+	</footer> <!-- end of footer -->
+	
+	<!-- Start of copyright footer -->
+	<footer class="copyright-text">
+		<p> &#169; Copyright - CopyrightOther, AC/DC/BC, 1678. </p>
+	<footer>
+	<!-- End of copyright footer -->
+</div> <!-- end of main div -->
+</body> <!-- end of body -->
+</html> <!-- end of html -->

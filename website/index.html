@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website</title>
+<meta name="viewpoint" content="width=divice-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/blueberry.css" /> <!--css file local -->
+<link rel="stylesheet" href="css/main-style.css" /> <!--css file local -->
+	<!-- note that the # means there is no link -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> <!--JavaScript file local -->
+<script src="javascript/jquery.blueberry.js"></script> <!--JavaScript file local -->
+<script> <!--JavaScript initialising -->
+$(window).load(function(){
+	$('.blueberry').blueberry();
+});
+</script> <!--JavaScript initials ending -->
+</head> <!-- end of head -->
+
+<body> <!-- start of body -->
+<div> <!-- start of main div -->
+
+	<!-- start of navigation -->
+	<header><img id="logo" src="images/logo.png"/><a href="index.html"></a>
+			<nav>
+				<ul><!-- Navigation links -->
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Our Products</a></li>
+					<li><a href="partners.html">Our Partners</a></li>
+					<li><a href="order-form.html">Order</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- End of Navigation -->
+		
+		<!-- Start of image slider -->
+		<div id="img-container">
+			<div id="content">
+				<div class="blueberry"> <!-- image-slider is the name of the slider with JavaScript-->
+					<ul class="slides"> <!-- used for image slider slider with css -->
+						<!-- Image links -->
+						<li><a href="https://www.google.co.uk/"/><img src="images/welcome-1.png"/></li></a>
+						<li><a href="https://www.google.co.uk/"/><img src="images/welcome-2.png"/></li></a>
+						<li><a href="https://www.google.co.uk/"/><img src="images/welcome-3.png"/></li></a>
+						<li><a href="https://www.google.co.uk/"/><img src="images/welcome-4.png"/></li></a>
+						<li><a href="https://www.google.co.uk/"/><img src="images/welcome-5.png"/></li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End of image slider -->
+		
+		<!-- Start of main 3 sections -->
+		<section> <!-- tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. -->
+			<a href="products.html"><img src="images/question-mark-1.png"/></a>
+			<h1>Sub-Header</h1>
+			<p>Research has shown that the average visitor spends 8 seconds on a site before deciding whether or not to leave. What does this mean for you? This means you only have 8 seconds to impress and inform a potential customer before they ditch your site for good. A good first impression is vital to your business site, and you only have one chance, and eight seconds, to make it.  </p>
+		</section>
+		
+		<section>
+			<a href="products.html"><img src="images/question-mark-2.png"/></a>
+			<h1>Sub-Header</h1>
+			<p>With this being said, you may be wondering what should or should not appear on your websites homepage. Below we have outlined what to include and how to include it.  </p>
+		</section>
+		
+		<section>
+			<a href="products.html"><img src="images/question-mark-3.png"/></a>
+			<h1>Sub-Header</h1>
+			<p>The key reason a customer is coming to your site is to find out more about your company and the products and/or services it offers. Be sure to include a brief description of what your company actually does, not simply vague fluff. The keyword in the previous sentence, though, is the word brief. The home page is not the place to write a long blurb about your companies history or founders that information should be left for the About Us page. </p>
+		</section>
+		<!-- end of main 3 sections -->
+		
+		<!-- Start of space header -->
+		<div class="clear"></div>
+		<h1> Random Header For Reasons </h1>
+		<div class="clear"></div>
+		<!-- end of space header -->
+		
+		<!-- Start of 3 sub-sections -->
+		<section>
+			<h1>Header</h1>
+			<a href="order-form.html"><img src="images/exclamation-point-1.png"/></a>
+			<p>Also on your homepage you may want to feature a few key services or products that you offer, either your most recent, or your most popular. However, try to limit the number of featured products; you want to get your product out there, not overload visitors with too many items. A short, bullet-point list often works well. </p>
+		</section>
+		
+		<section>
+			<h1>Header</h1>
+			<a href="order-form.html"><img src="images/exclamation-point-2.png"/></a>
+			<p>Having a great homepage is vital to retaining visitors and getting them to explore the rest of the content on your site. Remember that new visitors decide whether or not your site is worthy of their time within 8 seconds.  </p>
+		</section>
+		
+		<section>
+			<h1>Header</h1>
+			<a href="order-form.html"><img src="images/exclamation-point-3.png"/></a>
+			<p>Also test the page to make sure that all links and images work, and also skim for typos. </p>
+		</section>
+		<!-- end of 3 sub-sections -->
+		
+		<footer> <!-- start of footer -->
+			<section> <!-- start of 1st section in footer -->
+				<a href="contact.html"><h3 class="contacts"><b>The Place</b></h3></a>
+				<p><b>01872 267 879</b><br>
+				Random Place Street<br>
+				Random Area In The World<br>
+				random@random.e-mail.co.uk<br>
+				</p>	
+			</section> <!-- end of 1st section in footer -->
+			
+			<section> <!-- start of 2nd section in footer -->
+				<a href="contact.html"><h3 class="contacts"><b>The Contacts</b></h3></a>
+				<p><b>Tele: 01872 267 879</b><br>
+				Twitter: @somecarthing<br>
+				Facebook: somecarthing<br>
+				E-mail: random@random.e-mail.co.uk<br>
+				</p>
+			</section> <!-- end of 2nd section in footer -->
+			
+			<section> <!-- start of 3rd section in footer -->
+				<h3> Why are we so cool? </h3>
+				<button type="button" onclick="alertUser()">Click me to find out</button>
+				<!-- onclick is the event handler -->
+				
+			<script> <!-- function is a user defined event that can be given an action -->
+				function alertUser(){ 
+				 //function has the value of alertUser, meaning alertUser will be the variable referenced
+					alert("We are not.");
+					//alert is the event action that will display the text in the () in a small window/box
+				}
+			</script>
+			</section> <!-- end of 3rd section in footer -->
+		</footer> <!-- end of footer -->
+		
+		<!-- Start of copyright footer -->
+		<footer class="copyright-text">
+			<p> &#169; Copyright - CopyrightOther, AC/DC/BC, 1678. </p>
+		<footer>
+		<!-- End of copyright footer -->
+</div> <!-- end of main div -->
+</body> <!-- end of body -->
+</html> <!-- end of html -->
